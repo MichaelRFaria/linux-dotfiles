@@ -1,0 +1,24 @@
+(defpoll fastfetch_output
+  :interval "1s"
+  :initial ""
+  "~/.config/eww/scripts/fastfetch-eww.py")
+
+(defwindow desktop-info
+  :monitor "BenQ GW2490E"
+  :geometry (geometry
+    :x "30px"
+    :y "30px"
+    :width "1600px"
+    :height "800px"
+    :anchor "top left")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (box
+    :class "desktop-info"
+    :orientation "vertical"
+    (label
+    	:markup fastfetch_output
+	:halign "start"
+	:valign "start")))
+

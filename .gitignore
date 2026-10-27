@@ -1,0 +1,18 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Private keys and credentials
+id_rsa
+id_ed25519
+credentials.json
+secrets/
+
+# Temporary files
+*.swp
+*.tmp
+*~
+.DS_Store

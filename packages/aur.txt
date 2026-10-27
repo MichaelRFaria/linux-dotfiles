@@ -1,0 +1,7 @@
+eww
+jetbrains-toolbox
+linux-wallpaperengine-git
+python313
+ttf-ms-fonts
+yay
+yay-debug

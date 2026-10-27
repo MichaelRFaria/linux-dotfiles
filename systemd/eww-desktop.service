@@ -1,0 +1,16 @@
+[Unit]
+Description=Eww Fastfetch Desktop Widget
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/usr/bin/sleep 3
+ExecStart=/usr/bin/eww daemon
+ExecStartPost=/usr/bin/eww open desktop-info
+ExecStop=/usr/bin/eww close desktop-info
+ExecStopPost=/usr/bin/eww kill
+
+[Install]
+WantedBy=graphical-session.target
+

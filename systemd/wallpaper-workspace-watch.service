@@ -1,0 +1,12 @@
+[Unit]
+Description=Pause Wallpaper Engine when active workspace has windows
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.config/hypr/scripts/wallpaper-workspace-watch.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
+
