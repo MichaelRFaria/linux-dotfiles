@@ -1,0 +1,12 @@
+[Unit]
+Description=Linux Wallpaper Engine
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/linux-wallpaperengine --screen-root DP-3 --bg /home/michael/.config/linux-wallpaperengine/1160870304 --assets-dir /home/michael/.config/linux-wallpaperengine --volume 100
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target
+

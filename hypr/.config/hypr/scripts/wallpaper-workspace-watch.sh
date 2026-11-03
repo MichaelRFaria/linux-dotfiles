@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 while true; do
-    wallpaper_pid=$(pgrep -f '^./linux-wallpaperengine --screen-root HDMI-A-1' | head -n 1)
+    wallpaper_pid=$(pgrep -f '^./linux-wallpaperengine --screen-root DP-3' | head -n 1)
 
     if [[ -n "$wallpaper_pid" ]]; then
         windows=$(hyprctl -j activeworkspace | python -c \

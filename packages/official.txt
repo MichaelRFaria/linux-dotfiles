@@ -46,6 +46,7 @@ otf-font-awesome
 pipewire-pulse
 python-pip
 rofi
+stow
 sudo
 ttf-dejavu
 ttf-liberation

@@ -4,7 +4,7 @@
   "~/.config/eww/scripts/fastfetch-eww.py")
 
 (defwindow desktop-info
-  :monitor "BenQ GW2490E"
+  :monitor "27QD-10"
   :geometry (geometry
     :x "30px"
     :y "30px"

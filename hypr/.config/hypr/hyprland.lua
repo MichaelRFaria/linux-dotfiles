@@ -23,10 +23,18 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
-    mode     = "1920x1080@100",
-    position = "auto",
-    scale    = "auto",
+    output    = "HDMI-A-1",
+    mode      = "1920x1080@100",
+    position  = "0x-240",
+    scale     = 1,
+    transform = 1,
+})
+
+hl.monitor({
+    output    = "DP-3",
+    mode      = "2560x1440@240",
+    position  = "1080x0",
+    scale     = 1,
 })
 
 
