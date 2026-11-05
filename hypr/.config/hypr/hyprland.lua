@@ -329,6 +329,7 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 ---- CUSTOM KEYBINDINGS ----
 ----------------------------
 
+-- Moves focused window to a special workspace, simulating minmising the window
 hl.bind("SUPER + X", function ()
     if hl.get_workspace("special:minimized") then
         hl.dispatch(hl.dsp.window.move({ workspace = hl.get_active_workspace(), window = "tag:minimized" }))
@@ -337,6 +338,11 @@ hl.bind("SUPER + X", function ()
         hl.dispatch(hl.dsp.window.tag({ tag = "minimized", window = hl.get_active_window() }))
         hl.dispatch(hl.dsp.window.move({ workspace = "special:minimized", follow = false }))
     end
+end)
+
+-- Brings up clipboard history and allows you to copy previous entries to your clipboard
+hl.bind("SUPER + SHIFT + V", function ()
+    hl.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy")
 end)
 
 
