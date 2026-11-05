@@ -3,7 +3,7 @@ Description=Linux Wallpaper Engine
 After=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/linux-wallpaperengine --screen-root DP-3 --bg /home/michael/.config/linux-wallpaperengine/1160870304 --assets-dir /home/michael/.config/linux-wallpaperengine --volume 100
+ExecStart=%h/.config/linux-wallpaperengine/start-wallpapers.sh
 Restart=on-failure
 RestartSec=3
 

@@ -16,3 +16,7 @@ secrets/
 *.tmp
 *~
 .DS_Store
+
+# Wallpaper Engine assets and wallpapers
+linux-wallpaperengine/.config/linux-wallpaperengine/assets/
+linux-wallpaperengine/.config/linux-wallpaperengine/wallpapers/
