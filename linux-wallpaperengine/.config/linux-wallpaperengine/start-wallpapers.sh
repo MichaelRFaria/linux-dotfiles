@@ -9,6 +9,7 @@
 /usr/bin/linux-wallpaperengine \
     --screen-root HDMI-A-1 \
     --bg /home/michael/.config/linux-wallpaperengine/wallpapers/3707010937 \
+    --scaling fill \
     --assets-dir /home/michael/.config/linux-wallpaperengine/assets \
     --volume 0 &
 
