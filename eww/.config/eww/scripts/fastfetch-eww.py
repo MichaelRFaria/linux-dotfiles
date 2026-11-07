@@ -13,8 +13,8 @@ output = subprocess.run(
 
 # Convert ANSI SGR colour codes into Pango markup.
 colors = {
-    36: "#89dceb",  # cyan: logo and labels
-    32: "#a6e3a1",  # green: usage values
+    36: "#7da87b",  # desaturated dark lime green: logo and labels
+    32: "#aac6a9",  # greyish lime green: usage values
     34: "#89b4fa",  # blue
 }
 
