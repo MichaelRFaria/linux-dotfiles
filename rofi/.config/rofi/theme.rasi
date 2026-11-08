@@ -1,0 +1,63 @@
+* {
+    background:     #7da87b;
+    background-alt: #7da87b;
+    foreground:     #ffffff;
+    selected:       #aac6a9;
+    active:         #9ece6a;
+    urgent:         #f7768e;
+}
+
+window {
+    background-color: @background;
+    border:           2px;
+    border-color:     @selected;
+    border-radius:    12px;
+    width:            40%;
+    padding:          12px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          12px;
+}
+
+inputbar {
+    background-color: @background-alt;
+    text-color:       @foreground;
+    border-radius:    8px;
+    padding:          10px;
+    children:         [ prompt, entry ];
+    spacing:          10px;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @foreground;
+    placeholder:      "What is it that you desire?";
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            8;
+    spacing:          5px;
+    fixed-height:     false;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @foreground;
+    border-radius:    6px;
+    padding:          8px;
+}
+
+element selected {
+    background-color: @selected;
+    text-color:       @background;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}
