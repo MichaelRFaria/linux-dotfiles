@@ -2,6 +2,7 @@ eww
 jetbrains-toolbox
 linux-wallpaperengine-git
 python313
+qt6ct-kde
 ttf-ms-fonts
 yay
 yay-debug

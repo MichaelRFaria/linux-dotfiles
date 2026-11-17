@@ -1,0 +1,129 @@
+/* Main application */
+QWidget {
+    background-color: #171d1a;
+    color: #ffffff;
+}
+
+/* Main file view */
+QAbstractItemView {
+    background-color: #171d1a;
+    color: #ffffff;
+    selection-background-color: #7da87b;
+    selection-color: #ffffff;
+    outline: none;
+}
+
+/* File hover and selection */
+QAbstractItemView::item:hover {
+    background-color: #aac6a9;
+    color: #171d1a;
+}
+
+QAbstractItemView::item:selected {
+    background-color: #7da87b;
+    color: #ffffff;
+}
+
+/* Input fields */
+QLineEdit,
+QTextEdit,
+QPlainTextEdit {
+    background-color: #202a24;
+    color: #ffffff;
+    border: 1px solid #34483a;
+    border-radius: 4px;
+    selection-background-color: #7da87b;
+    selection-color: #ffffff;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #202a24;
+    color: #ffffff;
+    border: 1px solid #34483a;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: #aac6a9;
+    color: #171d1a;
+    border-color: #7da87b;
+}
+
+QPushButton:pressed {
+    background-color: #7da87b;
+    color: #ffffff;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background-color: #171d1a;
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #7da87b;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #aac6a9;
+}
+
+QScrollBar:horizontal {
+    background-color: #171d1a;
+    height: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #7da87b;
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #aac6a9;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #202a24;
+    color: #ffffff;
+    border: 1px solid #7da87b;
+    padding: 4px;
+}
+
+
+
+/* Dolphin file browser selection */
+QTreeView,
+QListView,
+QAbstractItemView {
+    background-color: #171d1a;
+    color: #ffffff;
+    selection-background-color: #7da87b;
+    selection-color: #ffffff;
+}
+
+QTreeView::item:selected,
+QListView::item:selected,
+QAbstractItemView::item:selected {
+    background-color: #7da87b;
+    color: #ffffff;
+}
+
+QTreeView::item:selected:active,
+QListView::item:selected:active {
+    background-color: #7da87b;
+    color: #ffffff;
+}
+
+QTreeView::item:hover,
+QListView::item:hover {
+    background-color: #202a24;
+    color: #aac6a9;
+}
