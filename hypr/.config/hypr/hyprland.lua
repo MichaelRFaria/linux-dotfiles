@@ -36,7 +36,14 @@ hl.monitor({
     position  = "1080x0",
     scale     = 1,
     bitdepth  = 10,
-    cm        = "auto"
+    cm = "hdr",
+    sdr_eotf = "srgb",
+    sdr_min_luminance = 0.005,
+    sdr_max_luminance = 260,
+    sdrsaturation = 1.05,
+    min_luminance = 0.25,
+    max_luminance = 300,
+    max_avg_luminance = 300,
 })
 
 
