@@ -16,6 +16,7 @@ git
 gnome-keyring
 greetd
 greetd-regreet
+grim
 grub
 gtk3
 hyprland
@@ -46,6 +47,7 @@ otf-font-awesome
 pipewire-pulse
 python-pip
 rofi
+slurp
 stow
 sudo
 ttf-dejavu
